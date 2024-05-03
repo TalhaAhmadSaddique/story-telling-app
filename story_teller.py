@@ -1,11 +1,11 @@
-# !pip install moviepy gradio openai
-# !sudo apt install ffmpeg
-
 from openai import OpenAI
 import requests, os, time
 from moviepy.editor import *
 import gradio as gr
 from dotenv import load_dotenv
+
+os.system("sudo apt install ffmpeg")
+
 
 load_dotenv()
 api_key=os.getenv("OPENAI_KEY")
